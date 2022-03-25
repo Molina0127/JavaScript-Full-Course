@@ -29,6 +29,7 @@ button {
 }
 
 #increment-btn {
+    text-transform: uppercase;
     background: darkred;
 }
 
