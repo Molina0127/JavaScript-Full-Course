@@ -4,10 +4,13 @@
 
 let count = 0
 
+// camelCase
+let countEl = document.getElementById("count-el")
+
 function increment() {
     count = count + 1
     console.log(count)
-    document.getElementById("count-el").innerText = count
+    countEl.innerText = count
 }
 
 
