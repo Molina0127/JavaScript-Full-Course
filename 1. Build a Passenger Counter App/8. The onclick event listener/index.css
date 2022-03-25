@@ -30,6 +30,7 @@ button {
 
 #increment-btn {
     background: darkred;
+    text-transform: uppercase;
 }
 
 #save-btn {
