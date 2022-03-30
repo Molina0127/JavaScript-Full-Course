@@ -15,4 +15,15 @@ function save() {
     count = 0
 }
 
+
+
+
+
+
+function addTaste() {
+    let ele = document.getElementById("elementos")
+    let select = ele.options[ele.options.selectedIndex] 
+    console.log(select)
+}
+
 console.log("Let's count people on the subway!")
