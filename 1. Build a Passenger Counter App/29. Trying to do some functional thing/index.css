@@ -11,10 +11,21 @@ h1 {
     margin-bottom: 10px;
 }
 
+div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
 h2 {
     font-size: 50px;
     margin-top: 0;
     margin-bottom: 20px;
+}
+
+select {
+    width: 200px;
+    height: 2.38rem;
 }
 
 button {
@@ -37,7 +48,13 @@ button {
     background: darkgreen;
 }
 
+#create-btn {
+    background: darkorange;
+}
+
 #choose-btn {
+    border-radius: 1rem;
+    width: 54%;
     background: darkgray;
 }
 
