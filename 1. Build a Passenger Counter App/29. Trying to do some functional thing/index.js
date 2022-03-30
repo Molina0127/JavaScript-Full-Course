@@ -15,12 +15,7 @@ function save() {
     count = 0
 }
 
-
-
-
-
-
-function addTaste() {
+function chooseTaste() {
     let ele = document.getElementById("elementos")
     let select = ele.options[ele.options.selectedIndex] 
     console.log(select)
