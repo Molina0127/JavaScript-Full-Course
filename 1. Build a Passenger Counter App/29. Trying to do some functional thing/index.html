@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1>Pedidos de Din din:</h1>
+        <h1>Números de Din din:</h1>
         <h2 id="count-el">0</h2>
 
         <div>
@@ -12,7 +12,7 @@
         </div>
 
         <form>
-            <select name="gelinhos" id="elementos">
+            <select name="gelinhos" id="elementos" onchange="chooseTaste()">
                 <option value="1">Paçoca</option>
                 <option value="2">Coco</option>
                 <option value="3">Nutella</option>
@@ -27,10 +27,10 @@
         
 
         
-        <button id="increment-btn" onclick="chooseTaste(), increment() ">Adicione</button>
+        <button id="increment-btn" onclick="increment() ">Adicione</button>
         <button id="create-btn" onclick="clooseOrder()">Fechar Pedido</button>
         <button id="save-btn" onclick="save()">Salve</button>
-        <p>Pedidos anteriores:</p>
+        <p>Pedidos:</p>
         <p id="save-el"></p>
         <script src="index.js">    
             
