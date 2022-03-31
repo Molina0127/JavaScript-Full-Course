@@ -20,13 +20,15 @@ function chooseTaste() {
     select = ele.options[ele.options.selectedIndex] 
     console.log(select.value)
 
-    let countStr = count + " " + select.text + " - "
-    saveEl.textContent += countStr
-    
-    // array = saveEl.textContent
+    if (count != 0) {
+        let countStr = count + " " + select.text + " - "
+        saveEl.textContent += countStr
 
-    countEl.textContent = 0
-    count = 0
+        countEl.textContent = 0
+        count = 0
+    }
+
+    
 }
 
 function save() {
