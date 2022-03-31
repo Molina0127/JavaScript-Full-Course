@@ -3,9 +3,6 @@ let saveEl = document.getElementById("save-el")
 let countEl = document.getElementById("count-el")
 let ele = document.getElementById("elementos")
 let select = 0;
-let a = false;
-let b;
-
 
 function increment() {
     count += 1
@@ -13,12 +10,14 @@ function increment() {
 }
 
 function decrement() {
-    count -= 1
-    countEl.textContent = count
-}
-
-function oi() {
-    window.alert("Iihh trocou")
+    if (count > 0){
+        count -= 1
+        countEl.textContent = count
+    }
+    else {
+        window.alert("Não foi adicionado nenhum produto, não é possível retirar")
+    }
+    
 }
 
 function chooseTaste() {
@@ -26,6 +25,8 @@ function chooseTaste() {
     
     if (count == 0) {
         window.alert("Primeiro você deve adicionar a quantidade de Dindin")
+        ele.options.selectedIndex = 0
+        select = ele.options.selectedIndex
     }
 
     if (count != 0) {
@@ -49,16 +50,8 @@ function chooseTaste() {
 
 }
 
-function save() {
-    // let countStr = count + " " + select.text + " - "
-    // saveEl.textContent += countStr
-
-    countEl.textContent = 0
-    count = 0
-}
-
 function clooseOrder() {
-    console.log(saveEl.textContent)
+    console.log(countEl.textContent)
 }
 
 console.log("Let's count the number of dindin and them tastes which are ordering by people!")

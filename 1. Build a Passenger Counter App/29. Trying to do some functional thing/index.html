@@ -7,9 +7,19 @@
         <h1>Números de Din din:</h1>
         <h2 id="count-el">0</h2>
 
+        
+        
+
+        
+
+        <button id="increment-btn" onclick="increment() ">Adicione</button>        
+        <button id="decrement-btn" onclick="decrement()">Retire</button>
+        <!-- <button id="create-btn" onclick="clooseOrder()">Fechar Pedido</button> -->
+        
         <div>
-            <h2 id="choose-btn" onclick="">Escolha um sabor</h2>
-        </div>
+            <span onclick="">Escolha um sabor</span>
+        </div> 
+
 
         <form>
             <select name="gelinhos" id="elementos" onchange="chooseTaste()">
@@ -17,21 +27,15 @@
                 <option value="1">Paçoca</option>
                 <option value="2">Coco</option>
                 <option value="3">Nutella</option>
-                <!-- <option value="d">Amendoim</option>
+                <option value="d">Amendoim</option>
                 <option value="e">Sensação</option>
                 <option value="f">Morango</option>
                 <option value="g">Maracujá</option>
-                <option value="h">Limão</option> -->
+                <option value="h">Limão</option> 
             </select>
         </form>
-
         
-
         
-        <button id="decrement-btn" onclick="decrement()">Retire</button>
-        <button id="increment-btn" onclick="increment() ">Adicione</button>
-        <button id="create-btn" onclick="clooseOrder()">Fechar Pedido</button>
-        <button id="save-btn" onclick="save()">Salve</button>
         <p>Pedidos:</p>
         <p id="save-el"></p>
         <script src="index.js">    
