@@ -8,14 +8,13 @@ let b;
 
 
 function increment() {
-    
     count += 1
-    countEl.textContent = count //+*" " + select.text */
-    a = true
-    
-    // window.alert("Escolha um sabor")
-    
-    
+    countEl.textContent = count
+}
+
+function decrement() {
+    count -= 1
+    countEl.textContent = count
 }
 
 function oi() {
@@ -25,23 +24,28 @@ function oi() {
 function chooseTaste() {
     select = ele.options[ele.options.selectedIndex] 
     
-    let resultado = confirm(`Você tem certeza que quer um Dindin do sabor ${select.text} ?`)
+    if (count == 0) {
+        window.alert("Primeiro você deve adicionar a quantidade de Dindin")
+    }
+
+    if (count != 0) {
+        let resultado = confirm(`Você tem certeza que quer ${count} Dindin do sabor ${select.text} ?`)
     
-    if (resultado == true){
-        if (select.value != 0 && count != 0) {
-            let countStr = count + " " + select.text + " - "
-            saveEl.textContent += countStr
-    
-            countEl.textContent = 0
+        if (resultado == true){
+            if (select.value != 0 && count != 0) {
+                let countStr = count + " " + select.text + " - "
+                saveEl.textContent += countStr
+        
+                countEl.textContent = 0
+                count = 0
+            }
+        }
+        else {
             count = 0
+            ele.options.selectedIndex = 0
+            select = ele.options.selectedIndex    
         }
     }
-    else {
-        count = 0
-        ele.options.selectedIndex = 0
-        select = ele.options.selectedIndex    
-    }
-    // console.log(select)
 
 }
 
