@@ -1,8 +1,10 @@
 let count = 0
+let select = 0
 let saveEl = document.getElementById("save-el")
 let countEl = document.getElementById("count-el")
+let decreBtn = document.getElementById("decrement-btn")
 let ele = document.getElementById("elementos")
-let select = 0;
+
 
 function increment() {
     count += 1
@@ -11,11 +13,12 @@ function increment() {
 
 function decrement() {
     if (count > 0){
+        decreBtn.disabled = false;
         count -= 1
         countEl.textContent = count
     }
-    else {
-        window.alert("Não foi adicionado nenhum produto, não é possível retirar")
+    else if (count == 0){
+        decreBtn.disabled = true;
     }
     
 }
