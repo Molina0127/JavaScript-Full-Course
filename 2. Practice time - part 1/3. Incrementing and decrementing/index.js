@@ -11,7 +11,5 @@ function remove1Point() {
     myPoints -= 1;
 }
 
-
-
 // Call the functions to that the line below logs out 10
 console.log(myPoints)
