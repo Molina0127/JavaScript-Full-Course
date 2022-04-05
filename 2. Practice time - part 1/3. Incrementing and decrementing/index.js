@@ -4,11 +4,11 @@ let myPoints = 3
 // add/remove points to/from the myPoints variable
 
 function add3Points() {
-
+    myPoints += 3;
 }
 
 function remove1Point() {
-    
+    myPoints -= 1;
 }
 
 
