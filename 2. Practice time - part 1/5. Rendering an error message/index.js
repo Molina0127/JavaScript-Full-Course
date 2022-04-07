@@ -2,8 +2,8 @@
 
 
 // "Something went wrong, please try again" in the paragraph
-
-
+let p = document.getElementById("") 
+let message = "Something went wrong, please try again"
 // that has the id="error".
-document.getElementById("error")
+let error = document.getElementById("error")
 
