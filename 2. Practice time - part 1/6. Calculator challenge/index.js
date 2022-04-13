@@ -10,12 +10,16 @@ function add() {
     sum.innerText += num1 + num2
 }
 
-function subtract(num1, num2) {
-    return num1 - num2
+function subtract() {
+    sum.innerText += ""
+    // return num1 - num2
+    sum.innerText += num1 - num2
 }
 
-function divide(num1, num2) {
-    return num1 / num2
+function divide() {
+    sum.innerText += ""
+    // return num1 / num2
+    sum.innerText += num1 / num2
 }
 
 function multiply(num1, num2) {
