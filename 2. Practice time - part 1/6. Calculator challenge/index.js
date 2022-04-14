@@ -6,6 +6,7 @@ let sum = document.getElementById("sum-el")
 
 // Create four functions: add(), subtract(), divide(), multiply()
 function add() {
+    
     sum.innerText = num1 + num2
     if (sum.textContent != "10") {
         sum.innerText += ""
