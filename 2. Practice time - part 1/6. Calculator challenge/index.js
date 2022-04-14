@@ -6,7 +6,6 @@ let sum = document.getElementById("sum-el")
 
 // Create four functions: add(), subtract(), divide(), multiply()
 function add() {
-    // return num1 + num2
     sum.innerText = num1 + num2
     if (sum.textContent != "10") {
         sum.innerText += ""
@@ -15,19 +14,16 @@ function add() {
 
 function subtract() {
     sum.innerText += ""
-    // return num1 - num2
     sum.innerText = num1 - num2
 }
 
 function divide() {
     sum.innerText += ""
-    // return num1 / num2
     sum.innerText = num1 / num2
 }
 
 function multiply() {
     sum.innerText += ""
-
     sum.innerText = (num1 * num2)
 }
 
